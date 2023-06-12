@@ -1,5 +1,5 @@
 # acs-cluster-local
-Free local alfresco inside a cluster.
+Free local alfresco inside a cluster created by RAUL GRAO PESTAÑA.
 
 Los repositorios que he desarrollado son un sistema basado en contenedores que utiliza la plataforma de código abierto Alfresco para la gestión de contenidos empresariales. Este sistema está diseñado para ser desplegado en un clúster de Kubernetes y consta de tres nodos, un panel de control (control panel) y dos nodos de trabajo (workers).
 
