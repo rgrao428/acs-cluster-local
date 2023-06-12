@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: content-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: content-app
+  template:
+    metadata:
+      labels:
+        io.kompose.network/pepe-default: "true"
+        io.kompose.service: content-app
+    spec:
+      containers:
+        - name: content-app
+          image: alfresco/alfresco-content-app:4.0.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: APP_BASE_SHARE_URL
+              value: http://localhost:8080/aca/#/preview/s
+          resources:
+            limits:
+              memory: "134217728"
+      restartPolicy: Always
+

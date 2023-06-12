@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: proxy
+  template:
+    metadata:
+      labels:
+        io.kompose.network/pepe-default: "true"
+        io.kompose.service: proxy
+    spec:
+      containers:
+        - name: proxy
+          image: alfresco/alfresco-acs-nginx:3.4.2
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DISABLE_ADW
+              value: "true"
+            - name: DISABLE_CONTROL_CENTER
+              value: "true"
+            - name: DISABLE_PROMETHEUS
+              value: "true"
+            - name: DISABLE_SYNCSERVICE
+              value: "true"
+            - name: ENABLE_CONTENT_APP
+              value: "true"
+          resources:
+            limits:
+              memory: "134217728"
+      restartPolicy: Always
