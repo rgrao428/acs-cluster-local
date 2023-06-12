@@ -1,3 +1,5 @@
+# docker-compose.yml comes from other github account: https://github.com/Alfresco/acs-deployment/blob/master/docker-compose/community-docker-compose.yml
+# I chose alfresco community edition.
 # This docker-compose file will spin up an ACS cluster on a local host.
 # It requires a minimum of 13GB Memory to distribute among containers.
 #
