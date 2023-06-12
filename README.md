@@ -34,3 +34,18 @@ Los repositorios que he compartido han sido de gran ayuda para alcanzar mi objet
 Valorando la importancia de actuar de manera ética e íntegra, me enorgullece mantener una postura responsable al garantizar el uso adecuado de la información proporcionada. Mi objetivo principal es compartir conocimientos y ayudar a otros a comprender mejor el mundo de los dockers, contenedores, Kubernetes y otros conceptos relacionados.
 
 Agradezco la oportunidad de participar en este proyecto y espero que mi contribución te sea de utilidad.
+
+# REQUISITOS NECESARIOS PARA QUE TE FUNCIONE COMO A MI
+
+- Sistema Operativo (S.O.) = Windows 10 
+- Versión = 22H2, concretamente la 22000.1936 
+- Memória Física = 16 GB RAM
+- CPU = Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz 
+
+# APLICACIONES USADAS
+
+- Docker Desktop (Dashboard visual + ajustes generales, para facilitar la creación y administración de contenedores)
+- Chocolatey (Para instalar otros comandos)
+- Kind ("Kubernetes in docker", para generar clústeres)
+- kubectl (Controla y administra clústeres de Kubernetes eficientemente)
+- Powershell (Usar los comandos necesarios)
