@@ -46,6 +46,7 @@ Agradezco la oportunidad de participar en este proyecto y espero que mi contribu
 
 - Docker Desktop (Dashboard visual + ajustes generales, para facilitar la creación y administración de contenedores)
 - Chocolatey (Para instalar otros comandos)
-- Kind ("Kubernetes in docker", para generar clústeres)
+- Kind ("Kubernetes in Docker", para generar clústeres)
 - kubectl (Controla y administra clústeres de Kubernetes eficientemente)
 - Powershell (Usar los comandos necesarios)
+- docker compose (Orquestrar contenedores para aplicaciones multi-contenedor de Docker)
