@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: transform-core-aio
+spec:
+  type: LoadBalancer
+  ports:
+    - name: "8090"
+      port: 8090
+      targetPort: 8090
+      nodePort: 30140
+  selector:
+    io.kompose.service: transform-core-aio
